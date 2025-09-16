@@ -26,7 +26,7 @@ def build_prompt_text(rec: Dict, from_label: str) -> str:
     survey = rec.get("survey_id", "UAS")
     year_t = rec["year_t"]
     year_t1 = rec["year_t1"]
-    q_text = rec.get("question_text", "Attitude toward abortion across waves")
+    q_text = rec.get("question_text", "Attitudes toward abortion over the years")
     group_str = format_group_meta(rec.get("group", {}))
     
     prompt = (
