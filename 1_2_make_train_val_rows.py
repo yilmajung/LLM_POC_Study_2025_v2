@@ -32,7 +32,7 @@ def build_prompt_text(rec: Dict, from_label: str) -> str:
     prompt = (
         "[Task: Predict transition distribution]\n"
         f"Survey: {survey}\n"
-        f"From wave: {year_t}  →  To wave: {year_t1}\n"
+        f"From year: {year_t}  →  To year: {year_t1}\n"
         f"Group: {group_str}\n"
         f"Question: {q_text}\n"
         f"From option: {from_label}\n"
